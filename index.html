@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Лабораторная5</title>
+    <script>function click() {window.open("form.html")};</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">База данных сотрудников</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Список <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Форма</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Сортировка
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">ФИО</a>
+                      <a class="dropdown-item" href="#">Телефон</a>
+                      <a class="dropdown-item" href="#">Эмеил</a>
+                      <a class="dropdown-item" href="#">Дата рождения</a>
+                      <a class="dropdown-item" href="#">должность</a>
+                    </div>
+                  </div>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="table-responsive">
+        <table class="table w-100">
+            <thead>
+                <tr>
+                    <th scope="col">ФИО</th>
+                    <th scope="col">Телефон</th>
+                    <th scope="col">Эмеил</th>
+                    <th scope="col">Дата рождения</th>
+                    <th scope="col">Должность</th>
+                    <th scope="col">Стаж</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id = "daniel" onclick="location.href='daniel.html';">
+                    <td>Киколиашвили Даниэль Зурабович </td>
+                    <td>89263034836 </td>
+                    <td>danielkiko@yandex.ru </td>
+                    <td>07.11.2001 </td>
+                    <td>Талисман </td>
+                    <td>5 </td>
+                </tr>
+                <tr>
+                    <td>1 </td>
+                    <td>2 </td>
+                    <td>3 </td>
+                    <td>4 </td>
+                    <td>5 </td>
+                    <td>6 </td>
+                </tr>
+                <tr>
+                    <td>1 </td>
+                    <td>2 </td>
+                    <td>3 </td>
+                    <td>4 </td>
+                    <td>5 </td>
+                    <td>6 </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
